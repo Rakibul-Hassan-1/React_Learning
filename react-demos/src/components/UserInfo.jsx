@@ -1,43 +1,22 @@
 const UserInfo = () => {
-  const user = [
-    {
-      username: "John",
-      email: "john@gmail.com",
-      location: "India",
-    },
-    {
-      username: "Rakib",
-      email: "Rakib@gmail.com",
-      location: "Bangladesh",
-    },
-    {
-      username: "Kawser",
-      email: "kawser@gmail.com",
-      location: "China",
-    },
-    {
-      username: "Wong",
-      email: "Wong@gmail.com",
-      location: "China",
-    },
-    {
-      username: "Saiful",
-      email: "Saiful@gmail.com",
-      location: "Barishal",
-    },
+  const users = [
+    { id: 1, name: "John", age: 20 },
+    { id: 2, name: "Saiful", age: 30 },
+    { id: 3, name: "Larry Wong", age: 10 },
+    { id: 4, name: "Rakibul Hassan", age: 40 },
+    { id: 5, name: "John Wong", age: 50 },
   ];
   return (
     <div>
-      <h1>This is all User Infomation:</h1>
-      {user.map((user) => (
-        <ul key={Math.random()}>
-          <li>{user.username}</li>
-          <li>{user.email}</li>
-          <li>{user.location}</li>
+      <h1>User infomation:</h1>
+      {users.map((users) => (
+        <ul key={users.id}>
+          <li>User Id: {users.id}</li>
+          <li>Name: {users.name}</li>
+          <li>Age: {users.age}</li>
         </ul>
       ))}
     </div>
   );
 };
-
 export default UserInfo;
