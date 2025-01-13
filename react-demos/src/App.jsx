@@ -1,9 +1,11 @@
-import Calculate from "./components/Calculate";
+import Loop from "./components/Loop";
 
 const App = () => {
   return (
     <div>
-      <Calculate />
+      {/* <Greeting /> */}
+      {/* <Product /> */}
+      <Loop />
     </div>
   );
 };
