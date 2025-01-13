@@ -1,11 +1,12 @@
-import Loop from "./components/Loop";
+import UserInfo from "./components/UserInfo";
 
 const App = () => {
   return (
     <div>
       {/* <Greeting /> */}
       {/* <Product /> */}
-      <Loop />
+      {/* <Loop /> */}
+      <UserInfo />
     </div>
   );
 };
