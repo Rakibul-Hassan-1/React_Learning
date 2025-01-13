@@ -6,14 +6,15 @@ const ProductList = () => {
   ];
   return (
     <div>
-      <h1>Product List are availabe:</h1>
-      {products.map((products) => (
-        <ul key={products.id}>
-          <li>Product id: {products.id}</li>
-          <li>Product Name: {products.name}</li>
-          <li>Product Price: {products.price}</li>
+      <h1>Product List are available:</h1>
+      {products.map((product) => (
+        <ul key={product.id}>
+          <li>Product id: {product.id}</li>
+          <li>Product Name: {product.name}</li>
+          <li>Product Price: {product.price}</li>
         </ul>
       ))}
+  
     </div>
   );
 };
