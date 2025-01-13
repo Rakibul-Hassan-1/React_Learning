@@ -1,5 +1,4 @@
-import Props from "./components/Props";
-
+import PassCheckComponent from "./components/PassCheckComponent";
 const App = () => {
   return (
     <div>
@@ -8,7 +7,9 @@ const App = () => {
       {/* <Loop /> */}
       {/* <UserInfo /> */}
       {/* <ProductList /> */}
-      <Props />
+      {/* <Props /> */}
+      {/* <Person /> */}
+      <PassCheckComponent />
     </div>
   );
 };
