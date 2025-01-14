@@ -1,4 +1,5 @@
-import PassCheckComponent from "./components/PassCheckComponent";
+import UserStatus from "./components/UserStatus";
+
 const App = () => {
   return (
     <div>
@@ -9,7 +10,10 @@ const App = () => {
       {/* <ProductList /> */}
       {/* <Props /> */}
       {/* <Person /> */}
-      <PassCheckComponent />
+      {/* <PassCheckComponent /> */}
+      {/* <Cart /> */}
+      {/* <Weather /> */}
+      <UserStatus loogedIn={1} isAdmin={1} />
     </div>
   );
 };
