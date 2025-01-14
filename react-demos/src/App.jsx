@@ -1,4 +1,4 @@
-import UserStatus from "./components/UserStatus";
+import CustomCss from "./components/CustomCss";
 
 const App = () => {
   return (
@@ -13,7 +13,8 @@ const App = () => {
       {/* <PassCheckComponent /> */}
       {/* <Cart /> */}
       {/* <Weather /> */}
-      <UserStatus loogedIn={1} isAdmin={1} />
+      {/* <UserStatus loogedIn={1} isAdmin={1} /> */}
+      <CustomCss />
     </div>
   );
 };
