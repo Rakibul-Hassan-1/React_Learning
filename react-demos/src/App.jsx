@@ -1,4 +1,4 @@
-import CustomCss from "./components/CustomCss";
+import State from "./components/State";
 
 const App = () => {
   return (
@@ -14,7 +14,8 @@ const App = () => {
       {/* <Cart /> */}
       {/* <Weather /> */}
       {/* <UserStatus loogedIn={1} isAdmin={1} /> */}
-      <CustomCss />
+      {/* <CustomCss /> */}
+      <State />
     </div>
   );
 };
