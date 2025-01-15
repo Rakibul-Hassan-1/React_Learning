@@ -1,4 +1,4 @@
-import State from "./components/State";
+import AddFriend from "./components/AddFriend";
 
 const App = () => {
   return (
@@ -15,7 +15,8 @@ const App = () => {
       {/* <Weather /> */}
       {/* <UserStatus loogedIn={1} isAdmin={1} /> */}
       {/* <CustomCss /> */}
-      <State />
+      {/* <State /> */}
+      <AddFriend />
     </div>
   );
 };
