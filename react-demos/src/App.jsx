@@ -1,4 +1,4 @@
-import AddFriend from "./components/AddFriend";
+import ExampleOne from "./components/ExampleOne";
 
 const App = () => {
   return (
@@ -16,7 +16,8 @@ const App = () => {
       {/* <UserStatus loogedIn={1} isAdmin={1} /> */}
       {/* <CustomCss /> */}
       {/* <State /> */}
-      <AddFriend />
+      {/* <AddFriend /> */}
+      <ExampleOne />
     </div>
   );
 };

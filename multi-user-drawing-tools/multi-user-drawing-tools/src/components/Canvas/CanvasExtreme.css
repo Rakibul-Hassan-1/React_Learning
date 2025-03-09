@@ -1,0 +1,39 @@
+/* Set the body and html to ensure full viewport usage */
+html,
+body,
+.canvas-page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas-content {
+  height: 100%; /* Ensure the canvas container takes full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* To prevent unwanted whitespace */
+  background-color: #f1f1f1;
+}
+
+/* Style the toolbar to not interfere with the canvas layout */
+.canvas-tools {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  padding: 10px;
+}
+
+.toggle-chat-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px;
+}
