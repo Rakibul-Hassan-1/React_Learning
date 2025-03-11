@@ -1,0 +1,59 @@
+/* Counter.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.number {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background: white;
+  border: none;
+  color: #764ba2;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #ffde59;
+  transform: scale(1.1);
+}
+
+.increment {
+  background: #48c78e;
+  color: white;
+}
+
+.decrement {
+  background: #f14668;
+  color: white;
+}
+
+.increment:hover {
+  background: #36a671;
+}
+
+.decrement:hover {
+  background: #d63447;
+}
