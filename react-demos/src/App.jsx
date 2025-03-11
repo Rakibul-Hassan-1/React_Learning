@@ -1,4 +1,4 @@
-import CopyInput from "./components/CopyInput";
+import Switch from "./components/Switch";
 
 const App = () => {
   return (
@@ -19,7 +19,8 @@ const App = () => {
       {/* <AddFriend /> */}
       {/* <ExampleOne /> */}
       {/* {<Shoppinglist />} */}
-      {<CopyInput />}
+      {/* {<CopyInput />} */}
+      {<Switch />}
     </div>
   );
 };
