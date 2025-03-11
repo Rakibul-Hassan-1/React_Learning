@@ -1,6 +1,12 @@
-import Switch from "./components/Switch";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    console.log("useEffect called");
+    document.title = `You clicked ${value} times`;
+  }, [value]);
+
   return (
     <div>
       {/* <Greeting /> */}
@@ -20,7 +26,9 @@ const App = () => {
       {/* <ExampleOne /> */}
       {/* {<Shoppinglist />} */}
       {/* {<CopyInput />} */}
-      {<Switch />}
+      {/* {<Switch />} */}
+      <h2>{value}</h2>
+      <button onClick={() => setValue(value + 1)}>Clcik Me</button>
     </div>
   );
 };
