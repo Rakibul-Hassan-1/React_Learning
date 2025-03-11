@@ -1,4 +1,4 @@
-import ExampleOne from "./components/ExampleOne";
+import Shoppinglist from "./components/Shoppinglist";
 
 const App = () => {
   return (
@@ -17,7 +17,8 @@ const App = () => {
       {/* <CustomCss /> */}
       {/* <State /> */}
       {/* <AddFriend /> */}
-      <ExampleOne />
+      {/* <ExampleOne /> */}
+      {<Shoppinglist />}
     </div>
   );
 };
