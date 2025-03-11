@@ -1,4 +1,4 @@
-import Shoppinglist from "./components/Shoppinglist";
+import CopyInput from "./components/CopyInput";
 
 const App = () => {
   return (
@@ -18,7 +18,8 @@ const App = () => {
       {/* <State /> */}
       {/* <AddFriend /> */}
       {/* <ExampleOne /> */}
-      {<Shoppinglist />}
+      {/* {<Shoppinglist />} */}
+      {<CopyInput />}
     </div>
   );
 };
