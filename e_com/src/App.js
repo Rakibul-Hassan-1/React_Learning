@@ -1,12 +1,16 @@
 import "./App.css";
-import Calculator from "./components/Calculator";
+import Form from "./components/Form";
+// import Calculator from "./components/Calculator";
+// import Meal from "./components/Meal";
 function App() {
   return (
     <div>
       {/* <Counter /> */}
       {/* <Todo /> */}
       {/* <Meal /> */}
-      <Calculator />
+
+      {/* <Calculator /> */}
+      <Form />
     </div>
   );
 }
