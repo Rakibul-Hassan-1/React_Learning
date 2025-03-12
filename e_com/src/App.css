@@ -1,93 +1,101 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #f8f8f2; 
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-/* Card-style container */
-.input-container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  display: flex;
-  gap: 10px;
-  align-items: center;
+/* Container Styling */
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  justify-items: center;
+  background: linear-gradient(135deg, #bec282 0%, #fad0c4 100%);
+  min-height: 100vh;
 }
 
-/* Input box */
-input {
-  width: 250px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-input:focus {
-  border-color: #bbb;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Submit button */
-button {
-  background: black;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1rem;
+/* Meal Card */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 320px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
 }
 
-button:hover {
-  background: #333;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Todo List */
-.todos-list {
-  margin-top: 20px;
-  list-style: none;
-  padding: 0;
-  width: 320px;
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Todo Items */
-.todo {
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+.card:hover img {
+  transform: scale(1.05);
 }
 
-/* Delete Button */
-.close {
-  background: black;
+/* Gradient Overlay Effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 1;
+}
+
+/* Content Section */
+.content {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
   color: white;
-  border: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.close:hover {
-  background: #ff5e78;
+/* Meal ID */
+.content p:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .items-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 90%;
+  }
 }

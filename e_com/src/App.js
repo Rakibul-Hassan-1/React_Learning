@@ -1,11 +1,11 @@
 import "./App.css";
-import Todo from "./components/Todo";
-
+import Meal from "./components/Meal";
 function App() {
   return (
     <div>
       {/* <Counter /> */}
-      <Todo />
+      {/* <Todo /> */}
+      <Meal />
     </div>
   );
 }
