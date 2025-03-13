@@ -1,0 +1,45 @@
+.recommended-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.recommended-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.btns {
+  background-color: #f5f5f5;
+  border: 2px solid transparent;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btns:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.btns:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .recommended-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
