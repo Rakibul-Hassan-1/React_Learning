@@ -216,17 +216,7 @@ const data = [
     color: "black",
     category: "sandals",
   },
-  {
-    img: "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg",
-    title: "Chunky High Heel",
-    star: <AiFillStar className="rating-start" />,
-    reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "50",
-    company: "Vans",
-    color: "black",
-    category: "heels",
-  },
+
   {
     img: "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg",
     title: "Slip On Stiletto High Heel",
@@ -248,17 +238,6 @@ const data = [
     company: "Nike",
     color: "red",
     category: "heels",
-  },
-  {
-    img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
-    title: "Nike Air Vapormax Plus",
-    star: <AiFillStar className="rating-start" />,
-    reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "200",
-    company: "Nike",
-    color: "red",
-    category: "sneakers",
   },
 
   {
